@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 app = Flask(__name__)
-model = load_model('model.h5')  # Укажи путь к своей модели
+model = load_model('mushroom_classifier_model_final.h5')  # Укажи путь к своей модели
 class_names = sorted(os.listdir('dataset/грибы/съедобные грибы')) + sorted(os.listdir('dataset/грибы/несъедобные грибы'))
 
 def prepare_image(img_path):
