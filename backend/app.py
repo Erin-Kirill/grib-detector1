@@ -17,7 +17,7 @@ def prepare_image(img_path):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('новый 1.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
